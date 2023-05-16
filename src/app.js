@@ -2,7 +2,8 @@ import express from 'express';
 import connectToDatabase from './db/conn.js';
 import Register from './models/register.js';
 
-const PORT = 9090;
+
+const PORT = process.env.PORT ||8000
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
