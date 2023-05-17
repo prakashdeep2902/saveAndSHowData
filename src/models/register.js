@@ -1,6 +1,7 @@
 
 import mongoose from "mongoose";
 const { Schema } = mongoose;
+
 const registerSchema = new Schema({
     
     name: {
@@ -22,5 +23,4 @@ const registerSchema = new Schema({
   });
   
   const Register = mongoose.model('Register', registerSchema);
-  
-  export default Register; // Export the model as default
+  export default Register; 
